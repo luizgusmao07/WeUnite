@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
     <RecoilRoot>
       <BrowserRouter>
-        <GoogleOAuthProvider clientId="639042207587-uekjbr5e8kkq57tr63t508sgrqm3hbnm.apps.googleusercontent.com">
+        <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}>
           <ChakraProvider theme={theme}>
             <ColorModeScript initialColorMode={theme.config.initialColorMode} />
             <SocketContextProvider>
